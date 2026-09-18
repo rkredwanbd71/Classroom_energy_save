@@ -55,16 +55,16 @@ function App() {
   return <div className="app">
     <aside className={menuOpen ? 'sidebar open' : 'sidebar'}>
       <div className="brand"><div className="brand-mark"><Zap size={19} fill="currentColor" /></div><div><b>WattWise</b><span>CLASSROOM INTELLIGENCE</span></div><button className="close-menu" onClick={() => setMenuOpen(false)}><X size={18} /></button></div>
-      <div className="workspace"><span className="avatar">C2</span><div><b>Engineering Faculty</b><span>Smart Campus / Lab 02</span></div><ChevronDown size={16} /></div>
+      <div className="workspace"><span className="avatar">RK</span><div><b>Redwan Khandoker</b><span>Smart Campus / Lab 02</span></div><ChevronDown size={16} /></div>
       <nav>{nav.map(({ label, icon: Icon }) => <button key={label} className={active === label ? 'active' : ''} onClick={() => { setActive(label); setMenuOpen(false); }}><Icon size={18} /><span>{label}</span>{label === 'Recommendations' && <i>3</i>}</button>)}</nav>
       <div className="nav-divider" />
       <nav className="secondary"><button><Settings size={18} /><span>Settings</span></button><button><CircleHelp size={18} /><span>Help center</span></button></nav>
       <div className="sidebar-foot"><div className="online-dot" /><span>System operational</span><small>v1.0.4</small></div>
     </aside>
     <main>
-      <header><button className="mobile-menu" onClick={() => setMenuOpen(true)}><Menu size={20} /></button><div className="breadcrumb"><span>Workspace</span><b>/</b><strong>{active}</strong></div><div className="header-actions"><div className="search"><Search size={17} /><input placeholder="Search classroom..." /></div><button className="icon-btn"><Bell size={19} /><i /></button><div className="profile"><span className="profile-avatar">AR</span><div><b>Arif Rahman</b><span>Administrator</span></div><ChevronDown size={15} /></div></div></header>
+      <header><button className="mobile-menu" onClick={() => setMenuOpen(true)}><Menu size={20} /></button><div className="breadcrumb"><span>Workspace</span><b>/</b><strong>{active}</strong></div><div className="header-actions"><div className="search"><Search size={17} /><input placeholder="Search classroom..." /></div><button className="icon-btn"><Bell size={19} /><i /></button><div className="profile"><span className="profile-avatar">RK</span><div><b>Redwan Khandoker</b><span>Administrator</span></div><ChevronDown size={15} /></div></div></header>
       <div className="content">
-        <section className="page-intro"><div><div className="eyebrow"><span className="live-pulse" /> LIVE MONITORING</div><h1>Good morning, Arif <span>👋</span></h1><p>Here’s what’s happening in your classroom today.</p></div><div className="date-select"><span>Last updated</span><b>18 Sep 2024, 10:42 AM</b><button><ChevronDown size={16} /></button></div></section>
+        <section className="page-intro"><div><div className="eyebrow"><span className="live-pulse" /> LIVE MONITORING</div><h1>Good morning, Redwan <span>👋</span></h1><p>Here’s what’s happening in your classroom today.</p></div><div className="date-select"><span>Last updated</span><b>18 Sep 2024, 10:42 AM</b><button><ChevronDown size={16} /></button></div></section>
         <section className="metrics">
           <MetricCard icon={Users} label="Current occupancy" value="24" unit=" students" change="+14%" tone="teal" />
           <MetricCard icon={Thermometer} label="Temperature" value="27.4" unit="°C" change="+1.2%" tone="orange" />
